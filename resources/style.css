@@ -1,21 +1,27 @@
 html,
 body {
   height: 100%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 body {
-  background: white;
+  background-color: rgb(246, 246, 246);
   color: gray;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "Playfair Display", serif;
-  width: 960px;
 }
 
 /* Header and nav style starts here */
-/* nav {
-  overflow: hidden;
-} */
+#header-container {
+  background-image: url("/resources/images/singlerose.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -38,15 +44,18 @@ li a {
 
 .navname {
   float: left;
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
 /* Greeting and h1 style starts here */
 #greeting-container {
-  text-align: left;
+  text-align: center;
   position: relative;
-  top: 100px;
-  left: 100px;
+  display: inline-block;
+  top: 200px;
+  left: 450px;
+  letter-spacing: 2px;
+  margin: auto;
 }
 
 span {
@@ -59,23 +68,56 @@ h1 {
 
 h4 {
   font-size: 0.8em;
+  right: 100px;
 }
 
 .btn-btn {
-  border: none;
-  background-color: #f03861;
+  border: 1px solid #f03861;
+  background-color: transparent;
   border-radius: 2px;
-  color: aliceblue;
+  color: #9bcb3c;
   margin: 0;
   position: relative;
   top: 50%;
-  left: 11%;
+  right: 70px;
   font-size: 0.7em;
 }
 
 /* About me style starts here */
-#about-me {
-  text-align: center;
+h2 {
+  top: 35px;
   position: relative;
-  top: 250px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #9bcb3c;
+  letter-spacing: 2px;
+  text-decoration: overline #f03861;
+}
+#about-me {
+  position: relative;
+  top: 35px;
+  height: 400px;
+}
+
+p.about-paragraph {
+  position: relative;
+  text-align: left;
+  font-size: 0.6em;
+  letter-spacing: 0.9px;
+  display: block;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  left: 130px;
+  bottom: 130px;
+}
+
+.profile-photo {
+  display: block;
+  margin: auto;
+  position: relative;
+  right: 130px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
