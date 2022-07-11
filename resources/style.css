@@ -1,2 +1,81 @@
+html,
 body {
+  height: 100%;
+}
+
+body {
+  background: white;
+  color: gray;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  width: 960px;
+}
+
+/* Header and nav style starts here */
+/* nav {
+  overflow: hidden;
+} */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  position: relative;
+  float: right;
+  margin: 15px;
+}
+
+li a {
+  text-decoration: none;
+  color: #9bcb3c;
+  font-size: 0.8em;
+  border-top: 2px solid #f03861;
+}
+
+.navname {
+  float: left;
+  font-size: 0.7em;
+}
+
+/* Greeting and h1 style starts here */
+#greeting-container {
+  text-align: left;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+span {
+  color: #9bcb3c;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 0.8em;
+}
+
+.btn-btn {
+  border: none;
+  background-color: #f03861;
+  border-radius: 2px;
+  color: aliceblue;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 11%;
+  font-size: 0.7em;
+}
+
+/* About me style starts here */
+#about-me {
+  text-align: center;
+  position: relative;
+  top: 250px;
 }
