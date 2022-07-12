@@ -31,7 +31,7 @@
         <ul class="navlinks">
           <li><a href="#contact">Contact</a></li>
 
-          <li><a href="#">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about-me">About</a></li>
         </ul>
@@ -44,7 +44,7 @@
       <div id="greeting-container">
         <h1>Hello! I'm <span>Victoria.</span></h1>
         <h4>I'm a Web Developer based in Maryland</h4>
-        <button class="btn-btn"><a href="#contact"></a>Work with me!</button>
+        <button class="btn-btn"><a href="#contact">Work with me!</a></button>
       </div>
     </header>
     <!-- About section starts here -->
@@ -57,7 +57,7 @@
       />
 
       <p class="about-paragraph">
-        I am currently a Junior Full Stack student, working towards my finishing
+        I am currently a Junior Full Stack student, working towards finishing
         the Junior Full Stack Web Development programme in Washington,DC run by
         Generation USA. I have always held a strong interest in tech and enjoy
         programming. My strong points include problem-solving, persistence,
@@ -80,6 +80,36 @@
       <img class="skills-icons" src="/resources/images/006-git.png" />
     </div>
 
+    <!-- Project starts here -->
+    <h2 class="project-h2">Projects</h2>
+    <div id="projects">
+      <div class="project-children">
+        <img
+          class="mockup-icons"
+          src="/resources/images/PersonalPortfolioMockup.png"
+        />
+        <strong>Personal Website</strong><br />
+        <p class="mockup-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel animi
+          dolorum at, sit quaerat ipsa nulla earum, aliquam, consequatur maxime
+          delectus quae blanditiis nihil quis soluta cumque deserunt nisi
+          expedita?
+        </p>
+      </div>
+      <!-- mockup item number 2 starts here -->
+      <div class="project-children">
+        <img
+          class="mockup-icons"
+          src="/resources/images/PersonalPortfolioMockup.png"
+        />
+        <strong>Personal Website</strong><br />
+        <p class="mockup-paragraph">
+          This was the first project I coded all on my own. Super proud of it.
+          HTML, CSS and Bootstrap were used.
+        </p>
+      </div>
+    </div>
+
     <!-- contact me section starts here -->
 
     <div id="contact">
@@ -87,22 +117,23 @@
       <p class="contact-paragraph">Have a question or want to work together?</p>
       <form action="/action_page.php">
         <label for="name"></label><br />
-        <input type="text" id="name" value="name" name="name" required /><br />
+        <input type="text" id="name" name="name" placeholder="name" required />
 
-        <label for="email"></label><br />
+        <label for="email"></label>
         <input
           type="email"
           id="email"
           name="email"
-          value="email"
+          placeholder="email"
           required
-        /><br /><br />
-        <label for="message"></label>
+        /><br />
+        <label for="message"></label><br />
         <textarea
           id="message"
           name="message"
           rows="4"
           cols="50"
+          autofocus
           placeholder="Enter Message"
           required
         ></textarea
@@ -110,7 +141,27 @@
 
         <input type="submit" value="Submit" class="contact-button" />
       </form>
+      <a
+        class="icons-credit"
+        href="https://www.flaticon.com/free-icons/linkedin"
+        target="_blank"
+        title="linkedin icons"
+        >Flaticon</a
+      >
     </div>
+    <!-- Footer Starts here -->
+    <footer>
+      <a href="https://github.com/vickyluvs" target="_blank" alt="github logo"
+        ><img class="social-icons" src="/resources/images/005-github.png"
+      /></a>
+
+      <a
+        href="https://www.linkedin.com/in/victoria-turay-77055b201/"
+        alt="linkedIn logo"
+        target="_blank"
+        ><img class="social-icons" src="/resources/images/linkedin.png"
+      /></a>
+    </footer>
 
     <!-- Bootstrap javascript link -->
     <script

@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  background-color: rgb(246, 246, 246);
+  background-color: aliceblue;
   color: gray;
   margin: 0;
   padding: 0;
@@ -42,9 +42,16 @@ li a {
   border-top: 2px solid #f03861;
 }
 
+li a:hover {
+  text-shadow: 5px 5px 4px #00ff00;
+  border: none;
+  color: #9bcb3c;
+}
+
 .navname {
   float: left;
   font-size: 0.6em;
+  text-transform: uppercase;
 }
 
 /* Greeting and h1 style starts here */
@@ -52,8 +59,8 @@ li a {
   text-align: center;
   position: relative;
   display: inline-block;
-  top: 200px;
-  left: 450px;
+  top: 250px;
+  left: 480px;
   letter-spacing: 2px;
   margin: auto;
 }
@@ -71,16 +78,32 @@ h4 {
   right: 100px;
 }
 
-.btn-btn {
+button {
   border: 1px solid #f03861;
   background-color: transparent;
   border-radius: 2px;
-  color: #9bcb3c;
   margin: 0;
   position: relative;
   top: 50%;
   right: 70px;
-  font-size: 0.7em;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding: 3px;
+}
+
+button a {
+  text-decoration: none;
+  color: #9bcb3c;
+}
+
+button:hover {
+  text-shadow: 5px 5px 4px #00ff00;
+  border: none;
+  color: #9bcb3c;
+}
+
+a:hover {
+  color: #9bcb3c;
 }
 
 /* About me style starts here */
@@ -121,7 +144,7 @@ p.about-paragraph {
   right: 180px;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 /* Skills section style starts here */
@@ -137,8 +160,8 @@ h2.skills-h2 {
 }
 
 img.skills-icons {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   padding: 15px;
   animation-name: spin;
   animation-duration: 5000ms;
@@ -155,12 +178,48 @@ img.skills-icons {
   }
 }
 
+/* Project edits starts here */
+div#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.project-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img.mockup-icons {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+.mockup-paragraph {
+  font-size: 0.6em;
+  width: 320px;
+  text-align: left;
+  margin-top: -10px;
+}
+
+strong {
+  font-size: 1.2em;
+  color: gray;
+  text-align: center;
+  margin-top: -5px;
+}
+
 /* contact style starts here */
 #contact {
   text-align: center;
   background-image: url("/resources/images/singlerose.jpg");
   background-size: cover;
-  height: 380px;
+  height: 290px;
 }
 
 h2.h2-contact {
@@ -169,12 +228,13 @@ h2.h2-contact {
 
 input#name,
 input#email,
-textarea#message {
+textarea {
   width: 350px;
   background-color: rgb(30, 36, 44);
-  color: #f03861;
+  color: rgb(246, 246, 246);
   border: none;
   border-radius: 2px;
+  font-size: 0.7em;
 }
 
 .contact-button {
@@ -186,7 +246,48 @@ textarea#message {
   font-size: 0.7em;
 }
 
+.contact-button:hover {
+  text-shadow: 5px 5px 4px #00ff00;
+  border: none;
+  color: #9bcb3c;
+}
+
 .contact-paragraph {
   font-size: 0.7em;
   padding-top: 15px;
+}
+
+textarea::placeholder {
+  color: #f03861;
+}
+
+textarea {
+  width: 710px;
+}
+input#email::placeholder {
+  color: #f03861;
+}
+
+input#name::placeholder {
+  color: #f03861;
+}
+
+a.icons-credit {
+  font-size: 6px;
+  float: left;
+  text-decoration: none;
+  color: gray;
+}
+
+/* footer style starts here */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(0, 22, 26);
+}
+
+.social-icons {
+  width: 40px;
+  padding: 10px;
 }
