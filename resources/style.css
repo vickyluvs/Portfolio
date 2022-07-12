@@ -92,6 +92,7 @@ h2 {
   color: #9bcb3c;
   letter-spacing: 2px;
   text-decoration: overline #f03861;
+  text-transform: uppercase;
 }
 #about-me,
 #skills {
@@ -118,8 +119,8 @@ p.about-paragraph {
   margin: auto;
   position: relative;
   right: 180px;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -128,11 +129,64 @@ p.about-paragraph {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 10px;
+  top: 100px;
+}
+
+h2.skills-h2 {
+  top: 100px;
 }
 
 img.skills-icons {
   width: 60px;
   height: 60px;
   padding: 15px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* contact style starts here */
+#contact {
+  text-align: center;
+  background-image: url("/resources/images/singlerose.jpg");
+  background-size: cover;
+  height: 380px;
+}
+
+h2.h2-contact {
+  margin-bottom: 30px;
+}
+
+input#name,
+input#email,
+textarea#message {
+  width: 350px;
+  background-color: rgb(30, 36, 44);
+  color: #f03861;
+  border: none;
+  border-radius: 2px;
+}
+
+.contact-button {
+  border: 1px solid #f03861;
+  background-color: transparent;
+  border-radius: 2px;
+  color: #9bcb3c;
+  margin: 0;
+  font-size: 0.7em;
+}
+
+.contact-paragraph {
+  font-size: 0.7em;
+  padding-top: 15px;
 }

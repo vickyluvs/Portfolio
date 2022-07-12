@@ -67,7 +67,7 @@
       </p>
     </div>
     <!-- Skills section starts here -->
-    <h2>Skills</h2>
+    <h2 class="skills-h2">Skills</h2>
     <div id="skills">
       <img class="skills-icons" src="/resources/images/001-html-5.png" />
       <img class="skills-icons" src="/resources/images/002-css-3.png" />
@@ -78,6 +78,38 @@
       <img class="skills-icons" src="/resources/images/009-node-js.png" />
       <img class="skills-icons" src="/resources/images/004-js.png" />
       <img class="skills-icons" src="/resources/images/006-git.png" />
+    </div>
+
+    <!-- contact me section starts here -->
+
+    <div id="contact">
+      <h2 class="h2-contact">Contact</h2>
+      <p class="contact-paragraph">Have a question or want to work together?</p>
+      <form action="/action_page.php">
+        <label for="name"></label><br />
+        <input type="text" id="name" value="name" name="name" required /><br />
+
+        <label for="email"></label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value="email"
+          required
+        /><br /><br />
+        <label for="message"></label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          placeholder="Enter Message"
+          required
+        ></textarea
+        ><br />
+
+        <input type="submit" value="Submit" class="contact-button" />
+      </form>
     </div>
 
     <!-- Bootstrap javascript link -->
