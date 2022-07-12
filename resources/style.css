@@ -87,16 +87,17 @@ h4 {
 h2 {
   top: 35px;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
   color: #9bcb3c;
   letter-spacing: 2px;
   text-decoration: overline #f03861;
 }
-#about-me {
+#about-me,
+#skills {
   position: relative;
   top: 35px;
-  height: 400px;
+  height: 200px;
 }
 
 p.about-paragraph {
@@ -105,10 +106,10 @@ p.about-paragraph {
   font-size: 0.6em;
   letter-spacing: 0.9px;
   display: block;
-  width: 300px;
+  width: 450px;
   height: 150px;
   margin: auto;
-  left: 130px;
+  left: 180px;
   bottom: 130px;
 }
 
@@ -116,8 +117,22 @@ p.about-paragraph {
   display: block;
   margin: auto;
   position: relative;
-  right: 130px;
+  right: 180px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+/* Skills section style starts here */
+#skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+img.skills-icons {
+  width: 60px;
+  height: 60px;
+  padding: 15px;
 }
