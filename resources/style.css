@@ -19,7 +19,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
-  width: 100%;
+  width: auto;
 }
 
 ul {
@@ -62,20 +62,24 @@ li a:hover {
   top: 250px;
   left: 480px;
   letter-spacing: 2px;
-  margin: auto;
+  margin: 0 auto;
+  width: auto;
 }
 
 span {
   color: #9bcb3c;
+  margin: 0 auto;
 }
 
 h1 {
   font-size: 1.5em;
+  margin: 0 auto;
 }
 
 h4 {
   font-size: 0.8em;
   right: 100px;
+  margin: 0 auto;
 }
 
 button {
@@ -89,11 +93,13 @@ button {
   font-size: 0.8em;
   text-decoration: none;
   padding: 3px;
+  margin: 0 auto;
 }
 
 button a {
   text-decoration: none;
   color: #9bcb3c;
+  margin: 0 auto;
 }
 
 button:hover {
@@ -116,12 +122,13 @@ h2 {
   letter-spacing: 2px;
   text-decoration: overline #f03861;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 #about-me {
   position: relative;
   top: 35px;
   height: 200px;
-  width: 800px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -131,7 +138,7 @@ p.about-paragraph {
   font-size: 0.6em;
   letter-spacing: 0.9px;
   display: block;
-  width: 500px;
+  width: 300px;
   height: 150px;
   margin: 0 auto;
   left: 180px;
@@ -156,7 +163,7 @@ div.skills-container {
   flex-direction: row;
   justify-content: center;
   bottom: 50px;
-  width: 800px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -180,7 +187,7 @@ h2#skills.skills-h2 {
 
 div.soft-skills,
 div.technical-skills {
-  width: auto;
+  width: 500px;
 }
 
 img.skills-icons {
@@ -208,7 +215,8 @@ div#projects.reveal.active {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  width: auto;
+  width: 600px;
+  margin: 0 auto;
 }
 
 div.card {
@@ -263,6 +271,7 @@ h6.projects-h6 {
   font-size: 0.8em;
   text-decoration: none;
   margin-top: -20px;
+  color: gray;
 }
 
 /* contact style starts here */
