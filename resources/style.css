@@ -117,11 +117,12 @@ h2 {
   text-decoration: overline #f03861;
   text-transform: uppercase;
 }
-#about-me,
-#skills {
+#about-me {
   position: relative;
   top: 35px;
   height: 200px;
+  width: 800px;
+  margin: 0 auto;
 }
 
 p.about-paragraph {
@@ -130,93 +131,138 @@ p.about-paragraph {
   font-size: 0.6em;
   letter-spacing: 0.9px;
   display: block;
-  width: 450px;
+  width: 500px;
   height: 150px;
-  margin: auto;
+  margin: 0 auto;
   left: 180px;
-  bottom: 130px;
+  bottom: 150px;
+  font-family: "Playfair Display", serif;
 }
 
 .profile-photo {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
   right: 180px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  bottom: 40px;
 }
 
 /* Skills section style starts here */
-#skills {
+div.skills-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  top: 100px;
+  bottom: 50px;
+  width: 800px;
+  margin: 0 auto;
 }
 
-h2.skills-h2 {
-  top: 100px;
+h2#skills.skills-h2 {
+  height: 80px;
+}
+
+.tech-heading {
+  display: block;
+  font-size: 0.8em;
+  background-color: #f03861;
+  color: white;
+  text-align: center;
+  width: 80px;
+  margin: 15px auto;
+}
+.tech-paragraph {
+  font-size: 0.6em;
+  letter-spacing: 0.9px;
+}
+
+div.soft-skills,
+div.technical-skills {
+  width: auto;
 }
 
 img.skills-icons {
-  width: 80px;
+  width: auto;
   height: 80px;
   padding: 20px;
-  animation-name: spin;
+  /* animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
 }
 
-@keyframes spin {
+/* @keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* Project edits starts here */
-div#projects {
+div#projects.reveal.active {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
+  width: auto;
 }
 
-.project-children {
+div.card {
+  top: 40px;
+  background-color: aliceblue;
+  border: none;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 90px;
+  font-size: 0.8em;
+  letter-spacing: 0.9px;
+}
+
+/* div.col-sm-4 {
+} */
+
+/* .project-children {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 35px;
-}
+} */
 
 img.mockup-icons {
-  width: 300px;
-  height: 300px;
+  width: 100%;
   display: block;
-  align-self: center;
-
-  background-color: #eaedee;
-  border-radius: 5px;
-  padding-bottom: 35px;
 }
-h2.project-h2 {
-  padding-bottom: 35px;
+h6.projects-h6 {
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  color: #9bcb3c;
+  letter-spacing: 2px;
+  text-decoration: overline #f03861;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
 }
 .mockup-paragraph {
-  font-size: 0.6em;
-  width: 320px;
+  font-size: 0.8em;
+  width: auto;
   text-align: left;
-  margin-top: -10px;
+  margin-top: -40px;
 }
 
 .mockup-title {
   font-size: 1.2em;
   color: gray;
   text-align: center;
+  margin-bottom: -40px;
+}
+
+.mockup-links a.card-link {
+  font-size: 0.8em;
+  text-decoration: none;
+  margin-top: -20px;
 }
 
 /* contact style starts here */
