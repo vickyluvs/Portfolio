@@ -15,7 +15,7 @@ body {
 
 /* Header and nav style starts here */
 #header-container {
-  background-image: url("/images/singlerose.jpg");
+  background-image: url("./images/singlerose.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
@@ -268,7 +268,7 @@ h6.projects-h6 {
 /* contact style starts here */
 #contact {
   text-align: center;
-  background-image: url("/images/singlerose.jpg");
+  background-image: url("./images/singlerose.jpg");
   background-size: cover;
   height: 290px;
 }
