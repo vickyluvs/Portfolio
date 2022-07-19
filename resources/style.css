@@ -186,9 +186,9 @@ h2#skills.skills-h2 {
 }
 
 /* div.soft-skills, */
-div.technical-skills {
+/* div.technical-skills {
   width: 600px;
-}
+} */
 
 img.skills-icons {
   width: auto;
@@ -198,6 +198,10 @@ img.skills-icons {
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.fa-brands {
+  color: #f03861;
 }
 
 @keyframes spin {
