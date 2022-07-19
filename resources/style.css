@@ -163,7 +163,7 @@ div.skills-container {
   flex-direction: row;
   justify-content: center;
   bottom: 50px;
-  width: 500px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -185,29 +185,29 @@ h2#skills.skills-h2 {
   letter-spacing: 0.9px;
 }
 
-div.soft-skills,
+/* div.soft-skills, */
 div.technical-skills {
-  width: 500px;
+  width: 600px;
 }
 
 img.skills-icons {
   width: auto;
   height: 80px;
   padding: 20px;
-  /* animation-name: spin;
+  animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; */
+  animation-timing-function: linear;
 }
 
-/* @keyframes spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
 /* Project edits starts here */
 div#projects.reveal.active {
@@ -242,6 +242,7 @@ h6.projects-h6 {
   text-decoration: overline #f03861;
   text-transform: uppercase;
   letter-spacing: 0.9px;
+  bottom: -15px;
 }
 .mockup-paragraph {
   font-size: 0.8em;
