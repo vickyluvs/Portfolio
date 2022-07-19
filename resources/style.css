@@ -15,7 +15,7 @@ body {
 
 /* Header and nav style starts here */
 #header-container {
-  background-image: url("/resources/images/singlerose.jpg");
+  background-image: url("./resources/images/singlerose.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
@@ -229,16 +229,6 @@ div.card {
   letter-spacing: 0.9px;
 }
 
-/* div.col-sm-4 {
-} */
-
-/* .project-children {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 35px;
-} */
-
 img.mockup-icons {
   width: 100%;
   display: block;
@@ -272,12 +262,13 @@ h6.projects-h6 {
   text-decoration: none;
   margin-top: -20px;
   color: gray;
+  text-align: center;
 }
 
 /* contact style starts here */
 #contact {
   text-align: center;
-  background-image: url("/resources/images/singlerose.jpg");
+  background-image: url("./resources/images/singlerose.jpg");
   background-size: cover;
   height: 290px;
 }
@@ -352,12 +343,3 @@ footer {
   width: 40px;
   padding: 10px;
 }
-/* 
-.copyright {
-  display: inline-block;
-  font-size: 7px;
-  position: relative;
-  top: 30px;
-  right: 63px;
-  letter-spacing: 0.5px;
-} */
