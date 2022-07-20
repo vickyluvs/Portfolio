@@ -50,20 +50,27 @@ li a:hover {
 
 .navname {
   float: left;
-  font-size: 0.6em;
+  font-size: 0.6rem;
   text-transform: uppercase;
 }
 
 /* Greeting and h1 style starts here */
 #greeting-container {
   text-align: center;
-  position: relative;
-  display: inline-block;
+  position: absolute;
   top: 250px;
   left: 480px;
   letter-spacing: 2px;
   margin: 0 auto;
-  width: auto;
+  /* width: auto; */
+}
+
+span.greeting-name {
+  color: #f03861;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 span {
@@ -74,6 +81,7 @@ span {
 h1 {
   font-size: 1.5em;
   margin: 0 auto;
+  display: inline-block;
 }
 
 h4 {
@@ -83,17 +91,17 @@ h4 {
 }
 
 button {
-  border: 1px solid #f03861;
+  border: none;
+  text-shadow: 5px 5px 4px #00ff00;
   background-color: transparent;
-  border-radius: 2px;
   margin: 0;
   position: relative;
   top: 50%;
   right: 70px;
   font-size: 0.8em;
   text-decoration: none;
-  padding: 3px;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 button a {
@@ -104,7 +112,7 @@ button a {
 
 button:hover {
   text-shadow: 5px 5px 4px #00ff00;
-  border: none;
+  border-bottom: 2px solid #f03861;
   color: #9bcb3c;
 }
 
@@ -185,12 +193,7 @@ h2#skills.skills-h2 {
   letter-spacing: 0.9px;
 }
 
-/* div.soft-skills, */
-/* div.technical-skills {
-  width: 600px;
-} */
-
-img.skills-icons {
+/* img.skills-icons {
   width: auto;
   height: 80px;
   padding: 20px;
@@ -198,20 +201,22 @@ img.skills-icons {
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
+} */
 
 .fa-brands {
-  color: #f03861;
+  color: #ef5f7e;
+  font-size: 2rem;
+  padding: 10px;
 }
 
-@keyframes spin {
+/* @keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* Project edits starts here */
 div#projects.reveal.active {
