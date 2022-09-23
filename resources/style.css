@@ -212,8 +212,8 @@ h2#skills.skills-h2 {
 }
 .fa-brands {
   color: #ef5f7e;
-  font-size: 2rem;
-  padding: 10px;
+  font-size: 3rem;
+  padding: 40px;
 }
 
 /* Project edits starts here */
@@ -457,9 +457,18 @@ footer {
     margin-bottom: 40px;
   }
 
-  /* section#projects.reveal.active {
-    width: 250px;
-  } */
+  .fa-brands {
+    color: #ef5f7e;
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+}
+
+.logo-name-duration {
+  font-size: 0.5rem;
+  display: block;
+  margin: 0 atuo;
+  padding-left: 50px;
 }
 
 @media screen and (max-width: 300px) {
@@ -549,16 +558,3 @@ footer {
     padding-bottom: 50px;
   }
 }
-/* 
-@media screen and (max-width: 400px) {
-  html,
-  body {
-    height: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  section#projects.reveal.active {
-    width: 100%;
-  }
-} */
