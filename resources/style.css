@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -161,7 +165,7 @@ h2 {
   margin: 0 auto;
 }
 
-p.about-paragraph {
+.about-paragraph {
   text-align: left;
   font-size: 0.6rem;
   letter-spacing: 0.9px;
@@ -171,6 +175,10 @@ p.about-paragraph {
   bottom: 150px;
   padding: 20px;
   font-family: "Playfair Display", serif;
+}
+
+p {
+  margin-top: 50px;
 }
 
 .profile-photo {
@@ -421,6 +429,7 @@ footer {
     justify-content: space-around;
     width: 50%;
     height: -200px;
+    margin-top: 50px;
   }
 
   p.about-paragraph {
