@@ -287,7 +287,7 @@ h6.projects-h6 {
   background-image: url("./images/singlerose.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 290px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,11 +370,19 @@ footer {
 }
 
 .social-icons {
-  width: 30px;
+  width: 20px;
   padding: 5px;
-  background-color: rgb(30, 36, 44);
+  background-color: rgb(72, 77, 83);
   margin-left: 5px;
   border-radius: 5px;
+}
+.social-icons-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.copyright {
+  font-size: 0.5rem;
 }
 /* media queries starts here */
 @media screen and (max-width: 600px) {
