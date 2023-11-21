@@ -10,22 +10,18 @@ body {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: white;
   color: gray;
   margin: 0;
   padding: 0;
   font-family: "Playfair Display", serif;
-  width: 100%;
+  width: 80%;
 }
 
 /* Header and nav style starts here */
 #header-container {
-  background-image: url("./images/singlerose.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 header {
