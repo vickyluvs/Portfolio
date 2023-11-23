@@ -15,12 +15,11 @@
     <title>Victoria Turay</title>
     <!-- Bootstrap css link -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <!-- style.css link  -->
     <link rel="stylesheet" href="./resources/style.css" />
 
@@ -39,42 +38,67 @@
     ></script>
   </head>
   <body>
-    <!-- *******font-family: 'Playfair Display', serif; *****-->
-
-    <header id="header-container">
-      <nav>
-        <ul class="navlinks">
-          <li><a href="#contact">Contact</a></li>
-
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about-me">About</a></li>
-        </ul>
-        <ul class="navname">
-          <li><img src="./resources/images/logo.png" width="50px" /></li>
-        </ul>
+    <!-- main starts here -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./resources/images/logo.png" width="50px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
-      <!-- H1 contents starts here -->
-      <div id="greeting-container">
-        <h1>Hello! I'm <span class="greeting-name">Victoria.</span></h1>
-        <h4>I'm a Front-End Web Developer based in Maryland</h4>
-        <button class="btn-btn"><a href="#contact">Work with me!</a></button>
+      <div id="profile-photo-div">
+        <img
+          class="profile-photo"
+          src="./resources/images/undraw_teacher_re_sico (1).svg"
+          alt="Developer_Illustratration"
+        />
       </div>
+      <h1>
+        Hello! I'm
+        <span class="greeting-name">Victoria.</span>
+      </h1>
+      <h4>I'm a Front-End Web Developer based in Maryland</h4>
+      <a href="#contact" class="btn-btn">Work with me!</a>
     </header>
-    <!-- About section starts here -->
-    <main id="main-container">
-      <h2>About</h2>
-      <section id="about-me" class="reveal">
-        <div>
-          <img
-            class="profile-photo"
-            src="./resources/images/undraw_teacher_re_sico (1).svg"
-            alt="Developer Illustratration"
-          />
-        </div>
-
-        <div>
+    <main>
+      <!-- about me section -->
+      <div id="about-me">
+        <h2>About</h2>
+        <section class="about-me">
           <p class="about-paragraph">
             Hi, welcome to my little side of the world. I am a front end
             developer. What I love about the Front-end side of web development
@@ -90,244 +114,15 @@
             the code that's been giving me a hard time. I also enjoy binge
             watching sci-fi and action movies!
           </p>
-        </div>
-      </section>
-      <!-- Skills section starts here -->
-      <h2 id="skills" class="skills-h2 reveal">Skills</h2>
-      <div class="skills-container">
-        <div class="technical-skills">
-          <i class="fa-brands fa-html5 fa-beat"></i>
-          <em class="logo-name-duration">HTML</em>
-          <em class="logo-name-duration">1 + year</em>
-        </div>
-
-        <div class="technical-skills">
-          <i class="fa-brands fa-css3-alt fa-beat"></i>
-          <em class="logo-name-duration">CSS</em>
-          <em class="logo-name-duration">1 + year</em>
-        </div>
-
-        <div class="technical-skills">
-          <i class="fa-brands fa-js-square fa-beat"></i>
-          <em class="logo-name-duration">JavaScript</em>
-          <em class="logo-name-duration">1 + year</em>
-        </div>
-
-        <div class="technical-skills">
-          <i class="fa-brands fa-bootstrap fa-beat"></i>
-          <em class="logo-name-duration">Bootstrap</em>
-          <em class="logo-name-duration">1 + year</em>
-        </div>
-
-        <div class="technical-skills">
-          <i class="fa-brands fa-github fa-beat"></i>
-          <em class="logo-name-duration">GitHub</em>
-          <em class="logo-name-duration">1 + year</em>
-        </div>
-
-        <div class="technical-skills">
-          <i class="fa-brands fa-git-square fa-beat"></i>
-          <em class="logo-name-duration">Git</em>
-          <em class="logo-name-duration">1 + year</em>
-        </div>
+        </section>
       </div>
-      <!-- skills section ends here -->
-
-      <!-- Project starts here -->
-      <section id="projects" class="reveal">
-        <div class="row">
-          <h6 class="projects-h6">Projects</h6>
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title mockup-title">Portfolio Website</h5>
-
-                <img
-                  src="./resources/images/PersonalPortfolioMockup.png"
-                  class="card-img-top mockup-icons"
-                  alt="Portfolio mockup"
-                />
-                <p class="card-text mockup-paragraph">
-                  And then there's me. I've built this portfolio website to
-                  showcase my skills as a software developer. As in life, I am
-                  expecting my portfolio to transform and grow with every new
-                  programming experience and tech opportunity I come across
-                  starting today and into the near future. Stay tuned!
-                </p>
-                <p><span>HTML5</span>|<span>CSS3</span></p>
-                <div class="card-body mockup-links">
-                  <a
-                    href="https://github.com/vickyluvs/Portfolio"
-                    class="card-link"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a href="#" class="card-link">live Site</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Second row starts here -->
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title mockup-title">Daily Quotes To Inspire</h5>
-                <img
-                  src="./resources/images/Randomquote.png"
-                  class="card-img-top mockup-icons"
-                  alt="Portfolio mockup"
-                />
-                <p class="card-text mockup-paragraph">
-                  Ready to light up your soul? If so, this random quote
-                  generator is the perfect "pick me up" for anyone going through
-                  a rainy day. My goal here was to build a webpage with an
-                  ambiance inclusive of the good intention behind it, and the
-                  video background was just the perfect fit. But don't just take
-                  my word for it, see for yourself!
-                </p>
-
-                <p>
-                  <span>HTML5</span>|<span>CSS3</span>|<span>JavaScript</span>
-                </p>
-                <div class="card-body mockup-links">
-                  <a
-                    href="https://github.com/vickyluvs/Random-Quote-Generator"
-                    class="card-link"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://vickyluvs.github.io/Random-Quote-Generator/"
-                    class="card-link"
-                    >Live Site</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title mockup-title">Mangata Jewelry Store</h5>
-
-                <img
-                  src="./resources/images/jewelrystore.png"
-                  class="card-img-top mockup-icons"
-                  alt="Jewelry Store mockup"
-                />
-                <p class="card-text mockup-paragraph">
-                  Visual layout, semantic structure, css layout, css styling,
-                  flexbox and css effects helped bring website to life. See it
-                  for youself
-                </p>
-
-                <p><span>HTML5</span>|<span>CSS3</span></p>
-                <div class="card-body mockup-links">
-                  <a
-                    href="https://github.com/vickyluvs/Mangata_Gallo-_Jewelry_store"
-                    class="card-link"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://vickyluvs.github.io/Mangata_Gallo-_Jewelry_store/"
-                    class="card-link"
-                    >Live Site</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title mockup-title">Travel Jounal</h5>
-
-                <img
-                  src="./resources/images/traveljournal.png"
-                  class="card-img-top mockup-icons"
-                  alt="Jewelry Store mockup"
-                />
-                <p class="card-text mockup-paragraph">
-                  This is my first project with React. As I am learning more and
-                  more about React, I find myself enjoying it so much more.
-                </p>
-
-                <p><span>React.Js</span></p>
-                <div class="card-body mockup-links">
-                  <a
-                    href="https://github.com/vickyluvs/Travel_Journal"
-                    class="card-link"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://wondrous-medovik-8e9da6.netlify.app/"
-                    class="card-link"
-                    >Live Site</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end of second -->
-        </div>
-        <!--end of row-->
-
-        <!-- second project column starts here -->
-      </section>
-      <!--End of div projects-->
-      <!-- project section ends -->
-
-      <!-- contact me section starts here -->
-      <section id="contact" class="reveal">
-        <div><h2 class="h2-contact">Connect with me</h2></div>
-        <div>
-          <h6 class="contact-paragraph">
-            Have a resume inquiry or looking to chat? Connect with me today!
-          </h6>
-          <div class="social-icons-div">
-            <a
-              href="https://github.com/vickyluvs"
-              target="_blank"
-              alt="github logo"
-              ><img
-                class="social-icons"
-                src="./resources/images/github-brands.svg"
-                alt="Github Logo"
-                target="_blank"
-            /></a>
-
-            <a
-              href="https://www.linkedin.com/in/victoria-turay-77055b201/"
-              alt="linkedIn logo"
-              target="_blank"
-              ><img
-                class="social-icons"
-                src="./resources/images/linkedin-brands.svg" /></a
-            ><br />
-            <a href="mailto:hturay1@gmail.com" target="blank" class="email">
-              <img
-                class="social-icons"
-                src="./resources/images/envelope-fill.svg"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
+      <hr />
     </main>
-    <!-- Footer Starts here -->
-    <footer>
-      <!-- copyright div -->
-      <div class="copyright">© 2022 Victoria Turay ❤️</div>
-    </footer>
-
+    <footer></footer>
     <!-- Bootstrap javascript link -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
     <!-- script tag for script.js -->
