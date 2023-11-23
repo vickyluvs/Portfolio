@@ -15,7 +15,7 @@ body {
 header {
   width: 100%;
   text-align: center;
-  background-color: #e3f2fd;
+  background-color: #fcd0da;
 }
 /* main css starts here */
 div#profile-photo-div {
@@ -27,7 +27,7 @@ div#profile-photo-div {
   border-radius: 100%;
 }
 main {
-  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
   background-color: white;
   width: 50%;
@@ -49,4 +49,37 @@ p {
 
 hr {
   border: 2px solid rgb(240, 56, 97);
+}
+
+/* skills css starts here */
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons,
+.title,
+.years {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.icons {
+  font-size: 16px;
+}
+
+.title,
+.years {
+  font-size: 10px;
+}
+
+.fa-bootstrap {
+  margin-left: 15px;
+}
+
+.fa-github {
+  margin-left: 20px;
 }
