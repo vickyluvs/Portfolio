@@ -83,3 +83,20 @@ hr {
 .fa-github {
   margin-left: 20px;
 }
+/* Footer css starts here */
+footer {
+  background-color: #fcd0da;
+  text-align: center;
+  font-size: 10px;
+}
+
+.footer-hr {
+  border: solid 1px white;
+  width: 400px;
+  margin: auto auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
