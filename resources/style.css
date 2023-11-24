@@ -15,7 +15,7 @@ body {
 header {
   width: 100%;
   text-align: center;
-  background-color: #fcd0da;
+  background-color: #e0aac7;
 }
 /* main css starts here */
 div#profile-photo-div {
@@ -96,9 +96,23 @@ hr {
 .fa-github {
   margin-left: 20px;
 }
+
+/* contact div starts here */
+#contact-div p {
+  text-align: center;
+}
+
+.mailto a {
+  text-decoration: none;
+  background-color: #e0aac7;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
 /* Footer css starts here */
 footer {
-  background-color: #fcd0da;
+  background-color: #e0aac7;
   text-align: center;
   font-size: 10px;
 }
