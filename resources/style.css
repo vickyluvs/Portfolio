@@ -97,6 +97,27 @@ hr {
   margin-left: 20px;
 }
 
+/* project div starts here */
+
+#project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.project-holder {
+  background-color: rgb(248, 249, 250);
+  height: auto;
+  margin: 5px 5px;
+  width: 100%;
+  /* padding: 5px; */
+}
+
+.mockup-icons {
+  width: 200px;
+  padding-bottom: 0;
+}
 /* contact div starts here */
 #contact-div p {
   text-align: center;
@@ -131,4 +152,21 @@ footer a {
 .fa-footer {
   margin: 5px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  #project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .project-holder {
+    background-color: rgb(248, 249, 250);
+    height: auto;
+    margin: 5px 5px;
+    width: 100%;
+    /* padding: 5px; */
+  }
 }
