@@ -1,17 +1,14 @@
-function reveal() {
-  let reveals = document.querySelectorAll(".reveal");
+function showProjectDetails() {
+  let para = document.querySelector(".mockup-paragraph");
 
-  for (var i = 0; i < reveals.length; i++) {
-    let windowHeight = window.innerHeight;
-    let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
+  if (para.style.display === "none") {
+    para.style.display = "block";
+  } else {
+    para.style.display = "none";
   }
 }
 
-window.addEventListener("scroll", reveal);
+document.addEventListener("DOMContentLoaded", function () {
+  let information = document.querySelector(".information");
+  information.addEventListener("click", showProjectDetails);
+});
