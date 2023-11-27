@@ -22,3 +22,16 @@ function flipCoin() {
     image.src = "./resources/images/vicky.png";
   }
 }
+// Retrieve the DOM element
+const typingTextElement = document.getElementById("typing-text");
+const typingTextContent = typingTextElement.innerHTML;
+
+// Replace the content with an empty string to start the animation
+typingTextElement.innerHTML = "";
+
+// Loop through each character and append to the element with delay
+for (let i = 0; i < typingTextContent.length; i++) {
+  setTimeout(() => {
+    typingTextElement.innerHTML += typingTextContent.charAt(i);
+  }, i * 500);
+}

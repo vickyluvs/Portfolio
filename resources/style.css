@@ -21,6 +21,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   border-style: ridge;
+  border-width: 5px;
   border-color: var(--borderColor);
   color: var(--mainFontColor);
 }
@@ -46,9 +47,8 @@ header {
 }
 
 .nav-item:hover {
-  text-decoration: underline dotted var(--hoverColor);
+  text-decoration: overline dotted var(--hoverColor);
   margin: 2px auto;
-  width: 90px;
   border-radius: 5px;
 }
 
@@ -187,8 +187,8 @@ strong:hover {
 }
 
 .card-link:hover {
-  text-decoration: overline;
-  color: rgb(186, 130, 238);
+  text-decoration: overline dotted;
+  color: var(--hoverColor);
 }
 
 .mockup-paragraph {
@@ -232,6 +232,39 @@ footer a {
   font-size: 20px;
 }
 
+/* Set up the typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+/* Apply styling to the text */
+#typing-text {
+  font-size: 24px;
+  animation: typing 2s steps(40, end);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000;
+  color: var(--hrColor);
+}
+
+/* Add a blinking cursor */
+#typing-text:after {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 5px;
+  width: 1px;
+  height: 24px;
+  background-color: #000;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 @media screen and (max-width: 400px) {
   #project-container {
     display: flex;
