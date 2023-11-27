@@ -34,14 +34,21 @@ header {
 
 .navbar-toggler {
   padding: 1px;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .navbar-toggler-icon {
   width: 25px;
 }
 
-.navbar-toggler:hover {
+.nav-item {
+  font-size: 10px;
+}
+
+.nav-item:hover {
+  text-decoration: underline dotted var(--hoverColor);
+  margin: 2px auto;
+  width: 90px;
   border-radius: 5px;
 }
 
