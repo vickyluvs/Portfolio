@@ -1,3 +1,9 @@
+:root {
+  --backgroundcolor: rgb(129, 54, 200);
+  --hrColor: rgb(129, 54, 200);
+  --fontColor: rgb(186, 130, 238);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,7 +21,7 @@ body {
 header {
   width: 100%;
   text-align: center;
-  background-color: #e0aac7;
+  background-color: var(--backgroundcolor);
 }
 
 /* main css starts here */
@@ -61,7 +67,7 @@ p {
 }
 
 hr {
-  border: 2px solid rgb(240, 56, 97);
+  border: 2px solid var(--hrColor);
 }
 
 /* skills css starts here */
@@ -159,8 +165,9 @@ strong:hover {
 .mockup-paragraph {
   display: none;
 }
-*/
-/* contact div starts here
+
+/* contact starts here */
+
 #contact-div p {
   text-align: center;
 }
@@ -175,7 +182,7 @@ strong:hover {
 }
 /* Footer css starts here */
 footer {
-  background-color: #e0aac7;
+  background-color: rgb(129, 54, 200);
   text-align: center;
   font-size: 10px;
 }
