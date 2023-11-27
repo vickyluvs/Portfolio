@@ -1,7 +1,12 @@
 :root {
-  --backgroundcolor: rgb(129, 54, 200);
-  --hrColor: rgb(129, 54, 200);
-  --fontColor: rgb(186, 130, 238);
+  --backgroundcolor: #faeee7;
+  --hrColor: #ef1053;
+  --linkColor: #fa709a;
+  --borderColor: #fa709a;
+  --mainFontColor: #33272a;
+  --buttonColor: #fa709a;
+  --hoverColor: #ff96b5;
+  --footerColor: #fa709a;
 }
 
 html {
@@ -9,12 +14,15 @@ html {
 }
 
 body {
-  background-color: rgb(248, 249, 250);
+  background-color: var(--backgroundcolor);
   margin: 0 auto;
   padding: 0;
   font-family: "Playfair Display", serif;
   width: 100%;
   box-sizing: border-box;
+  border-style: ridge;
+  border-color: var(--borderColor);
+  color: var(--mainFontColor);
 }
 
 /* header / nav sections */
@@ -24,19 +32,33 @@ header {
   background-color: var(--backgroundcolor);
 }
 
+.navbar-toggler {
+  padding: 1px;
+  border-radius: 0;
+}
+
+.navbar-toggler-icon {
+  width: 25px;
+}
+
+.navbar-toggler:hover {
+  border-radius: 5px;
+}
+
 /* main css starts here */
 div#profile-photo-div {
   padding-top: 20px;
 }
 .profile-photo {
   width: 150px;
-  border: 5px solid white;
+  height: 150px;
+  border: 5px dotted var(--borderColor);
   border-radius: 100%;
 }
 main {
   margin-bottom: 50px;
   text-align: center;
-  background-color: white;
+  background-color: var(--backgroundcolor);
   max-width: 500px;
   margin: 0 auto;
 }
@@ -130,7 +152,7 @@ hr {
 strong {
   display: inline-block;
   color: white;
-  background-color: #e0aac7;
+  background-color: var(--linkColor);
   margin: 80px auto;
   padding: 0 5px 0 5px;
   border-radius: 5px;
@@ -138,7 +160,7 @@ strong {
   cursor: pointer;
 }
 strong:hover {
-  background-color: rgb(186, 130, 238);
+  background-color: var(--linkColor);
 }
 .mockup-icons {
   width: 200px;
@@ -182,7 +204,7 @@ strong:hover {
 }
 /* Footer css starts here */
 footer {
-  background-color: rgb(129, 54, 200);
+  background-color: var(--footerColor);
   text-align: center;
   font-size: 10px;
 }
@@ -212,7 +234,6 @@ footer a {
     width: 100%;
   }
   .project-holder {
-    background-color: rgb(248, 249, 250);
     height: auto;
     margin: 5px 5px;
     width: 100%;
