@@ -1,5 +1,5 @@
 function showProjectDetails() {
-  let para = document.querySelector(".mockup-paragraph");
+  let para = document.querySelectorAll(".mockup-paragraph");
 
   if (para.style.display === "none") {
     para.style.display = "block";
