@@ -43,7 +43,11 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
-            ><img src="./resources/images/logo.png" width="50px"
+            ><img
+              src="./resources/images/logo.png"
+              width="50px"
+              alt="logo"
+              class="logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -97,7 +101,7 @@
       <div class="container">
         <hr />
         <!-- about me section -->
-        <div id="about-me" class="slide-up">
+        <div id="about-me">
           <h2 id="about">About</h2>
           <section class="about-me-section">
             <p class="about-paragraph">
@@ -116,7 +120,7 @@
         <hr />
 
         <!-- Skills section starts here -->
-        <div id="skills" class="slide-up">
+        <div id="skills">
           <section class="skills-section">
             <h2 class="skills-h2">Skills</h2>
             <p class="skills-about">
@@ -160,24 +164,24 @@
         <!-- skills section ends here -->
         <hr />
 
-        <div id="projects" class="slide-up">
+        <div id="projects">
           <section class="project-section">
             <h2 class="project-h2">Projects</h2>
 
             <div id="project-container">
               <div id="first" class="project-holder">
                 <div class="div-background">
+                  <img
+                    src="./resources/images/weather-app.png"
+                    class="mockup-icons"
+                  />
                   <strong class="information">Weather App</strong>
                 </div>
                 <p class="mockup-paragraph">
-                  And then there's me. I've built this portfolio website to
-                  showcase my skills as a software developer. As in life, I am
-                  expecting my portfolio to transform and grow with every new
-                  programming experience and tech opportunity I come across
-                  starting today and into the near future. Stay tuned!
+                  <!-- project details go here -->
                 </p>
 
-                <span class="language">HTML | CSS3 | JavaScript </span>
+                <span class="language">HTML | CSS3 | Vanilla JavaScript </span>
 
                 <div class="mockup-links">
                   <a
@@ -189,21 +193,46 @@
                   <a
                     href="https://puffycloudsweatherapp.netlify.app/"
                     class="card-link"
+                    target="_blank"
                     >live Site</a
                   >
                 </div>
               </div>
 
               <div id="second" class="project-holder">
-                <img
-                  src="./resources/images/Randomquote.png"
-                  class="mockup-icons"
-                  alt="Portfolio mockup"
-                />
+                <div class="div-background">
+                  <img
+                    src="./resources/images/randomquoteimg.png"
+                    class="mockup-icons"
+                    alt="Quote Generator"
+                  />
+                  <strong class="information">Random Quote Generator</strong>
+                </div>
+
+                <p class="mockup-paragraph">
+                  <!-- project details go here -->
+                </p>
+
+                <span class="language">HTML | CSS3 | Vanilla JavaScript </span>
+
+                <div class="mockup-links">
+                  <a
+                    href="https://github.com/vickyluvs/my_weather_app"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://puffycloudsweatherapp.netlify.app/"
+                    class="card-link"
+                    target="_blank"
+                    >live Site</a
+                  >
+                </div>
               </div>
             </div>
 
-            <div id="project-container" clas="slide-up">
+            <div id="project-container">
               <div id="third" class="project-holder">
                 <img
                   src="./resources/images/jewelrystore.png"
@@ -224,7 +253,7 @@
 
         <hr />
 
-        <div id="contact-div" class="slide-up">
+        <div id="contact-div">
           <h2 id="contact-me">Get In Touch 📧</h2>
           <section class="contact-section">
             <div>

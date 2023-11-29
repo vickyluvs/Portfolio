@@ -147,31 +147,26 @@ hr {
   width: 100%;
   /* padding: 5px; */
 }
-.div-background {
-  background-image: url(./images/weather-app.png);
-  width: 200px;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-}
 
 strong {
   display: inline-block;
   color: white;
   background-color: var(--linkColor);
-  margin: 80px auto;
-  padding: 0 5px 0 5px;
+  padding: 2px 5px 2px 5px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 8px;
   cursor: pointer;
 }
 strong:hover {
   background-color: var(--linkColor);
 }
+
+/* project images */
 .mockup-icons {
   width: 200px;
-  padding-bottom: 0;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
 }
 
 .language,
