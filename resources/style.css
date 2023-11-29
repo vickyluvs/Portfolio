@@ -21,7 +21,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   border-style: ridge;
-  border-width: 5px;
+  border-width: 2px;
   border-color: var(--borderColor);
   color: var(--mainFontColor);
 }
@@ -148,7 +148,7 @@ hr {
   /* padding: 5px; */
 }
 
-strong {
+.information {
   display: inline-block;
   color: white;
   background-color: var(--linkColor);
@@ -156,9 +156,14 @@ strong {
   border-radius: 5px;
   font-size: 8px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
-strong:hover {
+.information:hover {
   background-color: var(--linkColor);
+}
+
+.project_details {
+  text-decoration: underline var(--borderColor);
 }
 
 /* project images */
@@ -187,7 +192,13 @@ strong:hover {
 }
 
 .mockup-paragraph {
-  display: none;
+  display: block;
+}
+
+ul li {
+  font-size: 10px;
+  padding: 0 10px 0 10px;
+  text-align: justify;
 }
 
 /* contact starts here */
