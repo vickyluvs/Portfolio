@@ -9,7 +9,7 @@ function showProjectDetails() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  let information = document.querySelector(".information");
+  let information = document.querySelectorAll(".information");
   information.addEventListener("click", showProjectDetails);
 });
 
