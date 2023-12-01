@@ -1,9 +1,9 @@
 :root {
-  --backgroundcolor: #faeee7;
+  --backgroundcolor: #f8f9fa;
   --hrColor: #ef1053;
   --linkColor: #fa709a;
   --borderColor: #fa709a;
-  --mainFontColor: #33272a;
+  --mainFontColor: hsl(345, 13%, 18%);
   --buttonColor: #fa709a;
   --hoverColor: #ff96b5;
   --footerColor: #fa709a;
@@ -48,7 +48,6 @@ header {
 
 .nav-item:hover {
   text-decoration: overline dotted var(--hoverColor);
-  margin: 2px auto;
   border-radius: 5px;
 }
 
@@ -149,23 +148,9 @@ hr {
   /* padding: 5px; */
 }
 
-.information {
-  display: inline-block;
-  color: white;
-  background-color: var(--linkColor);
-  padding: 2px 5px 2px 5px;
-  border-radius: 5px;
-  font-size: 8px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  border: 0;
-}
-.information:hover {
-  background-color: var(--linkColor);
-}
-
 .project_details {
   text-decoration: underline var(--borderColor);
+  text-align: center;
 }
 
 /* project images */
@@ -179,7 +164,7 @@ hr {
 .language,
 .card-link {
   margin: 0 auto;
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 
 .card-link {
@@ -204,6 +189,32 @@ ul li {
 }
 .project-name {
   font-size: 10px;
+}
+
+/* accordion css starts  */
+.accordion-item {
+  background-color: var(--backgroundcolor);
+  border: 0;
+}
+
+.accordion-button {
+  background-color: var(--backgroundcolor);
+  background-size: cover;
+  font-size: 10px;
+  color: var(--buttonColor);
+}
+
+.accordion-button:active {
+  background-color: #f8f9fa;
+}
+
+.accordion-header {
+  font-size: 20px;
+}
+
+.accordion-body {
+  font-size: 12px;
+  text-align: center;
 }
 /* contact starts here */
 

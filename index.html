@@ -116,9 +116,7 @@
             </p>
           </section>
         </div>
-
         <hr />
-
         <!-- Skills section starts here -->
         <div id="skills">
           <section class="skills-section">
@@ -163,185 +161,204 @@
         </div>
         <!-- skills section ends here -->
         <hr />
-
-        <div id="projects">
-          <section class="project-section">
-            <h2 class="project-h2">Projects</h2>
-
-            <div id="project-container">
-              <div id="first" class="project-holder">
-                <h6 class="project-name">Weather App</h6>
-                <div class="div-background">
-                  <img
-                    src="./resources/images/weather-app.png"
-                    class="mockup-icons"
-                    alt="weather app picture"
-                  />
-                  <button class="information">Click me</button>
-                </div>
-                <!-- project details go here -->
-                <div class="mockup-paragraph">
-                  <p class="project_details">Description:</p>
-                  <p>
-                    This project is a web application that provides a
-                    personalized and friendly weather experience. It utilizes
-                    two APIs: one for retrieving live and current weather
-                    forecasts for specific locations and another for generating
-                    multilingual greetings.
-                  </p>
-                  <p class="project_details">Key Features:</p>
-                  <ul>
-                    <li>
-                      Leverages Axios to communicate with weather and greetings
-                      APIs.
-                    </li>
-                    <li>Multilingual welcome message greets users</li>
-                    <li>
-                      Retrieves live and current weather for any global city or
-                      country.
-                    </li>
-                    <li>
-                      Offers a user-friendly interface for searching and viewing
-                      weather information.
-                    </li>
-                  </ul>
-                  <p class="project_details">Technologies Used:</p>
-                  <ul>
-                    <li>Axios JavaScript library</li>
-                    <li>Weather API</li>
-                    <li>Greetings API</li>
-                  </ul>
-                </div>
-
-                <span class="language">HTML | CSS3 | Vanilla JavaScript </span>
-
-                <div class="mockup-links">
-                  <a
-                    href="https://github.com/vickyluvs/my_weather_app"
-                    class="card-link"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://puffycloudsweatherapp.netlify.app/"
-                    class="card-link"
-                    target="_blank"
-                    >live Site</a
-                  >
-                </div>
+        <!-- project section starts here -->
+        <section id="projects">
+         <!-- first accordion project starts here -->
+        <h2 class="project-h2" id="project-container">Projects</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Weather App
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+            style=""
+          >
+            <div class="accordion-body">
+              <div class="div-background">
+                <img
+                  src="./resources/images/weather-app.png"
+                  class="mockup-icons"
+                  alt="weather app picture"
+                />
+                
               </div>
-              <!-- end of project holder div -->
-              <div id="second" class="project-holder">
-                <h6 class="project-name">Random Quote Generator</h6>
-                <div class="div-background">
-                  <img
-                    src="./resources/images/randomquoteimg.png"
-                    class="mockup-icons"
-                    alt="Quote Generator"
-                  />
-                  <strong class="information">Click me</strong>
-                </div>
+              <!-- project details go here -->
+              <div class="mockup-paragraph">
+                <p class="project_details">Description:</p>
+                <p>
+                  This project is a web application that provides a
+                  personalized and friendly weather experience. It utilizes
+                  two APIs: one for retrieving live and current weather
+                  forecasts for specific locations and another for generating
+                  multilingual greetings.
+                </p>
+                <p class="project_details">Key Features:</p>
+                <ul>
+                  <li>
+                    Leverages Axios to communicate with weather and greetings
+                    APIs.
+                  </li>
+                  <li>Multilingual welcome message greets users</li>
+                  <li>
+                    Retrieves live and current weather for any global city or
+                    country.
+                  </li>
+                  <li>
+                    Offers a user-friendly interface for searching and viewing
+                    weather information.
+                  </li>
+                </ul>
+                <p class="project_details">Technologies Used:</p>
+                <ul>
+                  <li>Axios JavaScript library</li>
+                  <li>Weather API</li>
+                  <li>Greetings API</li>
+                </ul>
 
-                <div class="mockup-paragraph">
-                  <p class="project_details">Description:</p>
-                  <p>
-                    This project utilizes the Axios JavaScript library to fetch
-                    data from an API and compile it into a daily dose of
-                    information or inspiration. The generator can be tailored to
-                    provide a variety of content, such as quotes, facts, or
-                    trivia.
-                  </p>
-                  <p class="project_details">Key Features:</p>
-                  <ul>
-                    <li>
-                      Leverages Axios to retrieve data from external sources
-                    </li>
-                    <li>
-                      Presents information in a concise and engaging format
-                    </li>
-                    <li>
-                      Offers flexibility in customizing the content delivered
-                    </li>
-                  </ul>
+           <span class="language">HTML | CSS3 | Vanilla JavaScript </span>
 
-                  <p class="project_details">Technologies Used:</p>
-                  <ul>
-                    <li>Axios JavaScript library</li>
-                    <li>API</li>
-                  </ul>
-
-                  <p>
-                    This project demonstrates the ability to effectively utilize
-                    an API and present data in an engaging manner.
-                  </p>
-                </div>
-
-                <span class="language">HTML | CSS3 | Vanilla JavaScript </span>
-
-                <div class="mockup-links">
-                  <a
-                    href="https://github.com/vickyluvs/Random-Quote-Generator"
-                    class="card-link"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://adailydoseofquotes.netlify.app/"
-                    class="card-link"
-                    target="_blank"
-                    >live Site</a
-                  >
-                </div>
+              <div class="mockup-links">
+                <a
+                  href="https://github.com/vickyluvs/my_weather_app"
+                  class="card-link"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://puffycloudsweatherapp.netlify.app/"
+                  class="card-link"
+                  target="_blank"
+                  >live Site</a
+                >
               </div>
-              <!-- end of second project holder -->
-              <div id="third" class="project-holder">
-                <h6 class="project-name">Mangata Gallo Jewelry Store</h6>
-                <div class="div-background">
-                  <img
-                    src="./resources/images/mangatagallo.png"
-                    class="mockup-icons"
-                  />
-                  <strong class="information">Click me</strong>
-                </div>
-                <!-- image div ends here-->
-                <!-- project details go here -->
-                <div class="mockup-paragraph">
-                  <p class="project_details"></p>
-                  <p class="project_details"></p>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                  <p class="project_details"></p>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-                <!-- mockup paragraph div ends here -->
-
-                <span class="language">HTML | CSS3 </span>
-
-                <div class="mockup-links">
-                  <a
-                    href="https://github.com/vickyluvs/Mangata_Gallo-_Jewelry_store"
-                    class="card-link"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                  <a
-                    href="https://mangatagallojewelrystore.netlify.app/"
-                    class="card-link"
-                    target="_blank"
-                    >live Site</a
-                  >
-                </div>
-              </div>
-              <!-- end of third project holder -->
             </div>
-          </section>
+          </div>
         </div>
+      <!-- first accordion body ends here -->
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Random Quote Generator
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="div-background">
+              <img
+                src="./resources/images/randomquoteimg.png"
+                class="mockup-icons"
+                alt="Quote Generator"
+              />
+             
+            </div>
+
+            <div class="mockup-paragraph">
+              <p class="project_details">Description:</p>
+              <p>
+                This project utilizes the Axios JavaScript library to fetch
+                data from an API and compile it into a daily dose of
+                information or inspiration. The generator can be tailored to
+                provide a variety of content, such as quotes, facts, or
+                trivia.
+              </p>
+              <p class="project_details">Key Features:</p>
+              <ul>
+                <li>
+                  Leverages Axios to retrieve data from external sources
+                </li>
+                <li>
+                  Presents information in a concise and engaging format
+                </li>
+                <li>
+                  Offers flexibility in customizing the content delivered
+                </li>
+              </ul>
+
+              <p class="project_details">Technologies Used:</p>
+              <ul>
+                <li>Axios JavaScript library</li>
+                <li>API</li>
+              </ul>
+
+              <p>
+                This project demonstrates the ability to effectively utilize
+                an API and present data in an engaging manner.
+              </p>
+            </div>
+
+            <span class="language">HTML | CSS3 | Vanilla JavaScript </span>
+
+            <div class="mockup-links">
+              <a
+                href="https://github.com/vickyluvs/Random-Quote-Generator"
+                class="card-link"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://adailydoseofquotes.netlify.app/"
+                class="card-link"
+                target="_blank"
+                >live Site</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of second body accordio ends here -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+          Mangata Gallo Jewelry Store
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+           <!-- body goes here -->
+          </div>
+        </div>
+      </div>
+      <!-- End of third accordion body ends here -->
+      
+    </div>
+        </section>
+        <!-- project section ends here -->
 
         <hr />
         <div id="contact-div">
