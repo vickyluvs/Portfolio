@@ -224,7 +224,7 @@ ul li {
 
 .mailto a {
   text-decoration: none;
-  background-color: #e0aac7;
+  background-color: var(--buttonColor);
   color: white;
   padding: 5px 20px;
   border-radius: 5px;
