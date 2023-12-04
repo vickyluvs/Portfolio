@@ -187,6 +187,11 @@ ul li {
   padding: 0 10px 0 10px;
   text-align: justify;
 }
+
+ul li::marker {
+  color: #fa709a;
+  line-height: 1rem;
+}
 .project-name {
   font-size: 10px;
 }
